@@ -179,6 +179,10 @@ class ratser:
         return self.m[a].minpoly()
 
     def __add__(self, other):
+        if self.l.ncols() == 0:
+            return other
+        if other.l.ncols() == 0:
+            return self
         (la, ma, ra) = self.triplet()
         (lb, mb, rb) = other.triplet()
         n = la.ncols()
