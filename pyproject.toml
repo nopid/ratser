@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ratser"
-version = "0.2"
+version = "0.3"
 description = "Quick and dirty library for linear representation of rational series and semigroup trick computation. Includes Walnut import/export."
 readme = "README.md"
 requires-python = ">=3.9"
